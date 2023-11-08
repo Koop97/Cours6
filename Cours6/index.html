@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<!-- La déclaration <!DOCTYPE> doit être la toute première chose dans 
+    votre document HTML, avant la balise <html>. 
+-->
+<html lang="fr">
+<!-- L'attribut lang spécifie la langue du contenu de l'élément. 
+        Les exemples courants sont "en" pour l'anglais 
+-->
+
+<head>
+    <!-- La spécification HTML5 encourage les développeurs Web à utiliser 
+        le jeu de caractères UTF-8 -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Balise de titre
+	- Est censé être une description précise et concise du contenu d'une page
+	- Partie importante de l'optimisation des moteurs de recherche : créer des balises de titre descriptives et chargées de mots clés (chargées-> fortement chargées) pour le classement des moteurs de recherche
+	- gardez vos titres sous 60 caractères
+ -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/icons/favicon-16x16.png">
+    <link rel="manifest" href="../img/icons/site.webmanifest">
+    <link rel="mask-icon" href="../img/icons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>Café Coffee Buzz - Moncton, N.B.</title>
+    <!-- Cascading Style Sheets -->
+    <link href="../css/normalize.css" type="text/css" rel="stylesheet">
+    <link href="../css/coffeebuzz-grid.css" type="text/css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!--
+        header
+                La balise (élément) header  est généralement utilisée pour
+                regrouper un ensemble d'éléments h1-h6 pour baliser une page
+                titre avec son sous-titre ou son slogan. Commun
+                le contenu inclut le nom du site, le nom de l'entreprise,
+                logo, etc...
+
+        -->
+    <header>
+        <h1>Café Coffee Buzz</h1>
+        <p>Fournissez toute la caféine dont vous
+            avez besoin pour alimenter votre vie
+        </p>
+    </header>
+
+    <!-- nav>a*3 -->
+    <!-- L'élément HTML <nav> représente une section d'une page ayant 
+        des liens vers d'autres pages ou des fragments de cette page. 
+        Autrement dit, c'est une section destinée à la navigation dans un 
+        document (avec des menus, des tables des matières, des index, etc.).
+     -->
+    <nav>
+        <!-- <a href="#" title="">ACCUEIL</a> | -->
+        <!-- ACCUEIL |
+        <a href="#" title="voir notre menu">MENU </a> |
+        <a href="#" title="comment nous contacter">CONTACTER </a> |
+        <a href="#" title="à propos de nous">À PROPOS</a> -->
+        <ul>
+            <li><a href="#" title="">ACCUEIL</a></li>
+            <li>
+                <a href="#" title="voir notre menu">MENU</a>
+                <ul>
+                    <li><a href="#">CAFÉ</a></li>
+                    <li><a href="#">THÉ</a></li>
+                    <li><a href="#">BEIGNES</a></li>
+                    <li><a href="#">MUFFINS</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#" title="comment nous contacter">CONTACTER</a></li>
+            <li><a href="#" title="à propos de nous">À PROPOS</a></li>
+        </ul>
+    </nav>
+    <!--
+    main
+    La balise (élément) main représente la zone de contenu principale d'un document, qui inclut le contenu unique à ce document et exclut le contenu répété dans un ensemble de documents, tels que les liens de navigation du site, les informations sur les droits d'auteur, les logos et bannières du site et les formulaires de recherche ( sauf si la fonction principale du document ou de l'application est celle d'un formulaire de recherche).
+    Il ne doit pas y avoir plus d'un élément principal visible dans un document
+    -->
+    <main>
+        <section>
+            <hr>
+            <h2>Notre mission</h2>
+            <hr>
+            <p>Nous nous engageons à combler tous vos
+                besoins en caféine grâce à nos cafés et
+                thés de qualité. Bien sûr, nous voulons que vous
+                preniez une bonne tasse de café et une excellente expérience du café, mais nous sommes la seule
+                entreprise
+                qui
+                surveille et optimise activement les niveaux de caféine.
+            </p>
+            <div id="splash">
+                <img src="../img/splash.jpg" alt="splash" title="Alors arrêtez-vous et remplissez votre tasse" />
+            </div>
+
+            <p>Alors arrêtez-vous et remplissez votre tasse, ou
+                commandez en ligne avec notre nouveau formulaire de
+                commande en ligne Bean Machine, et obtenez un vraimont bon
+                de qualité qui, vous le savez, répondra à vos normes de
+                caféine.
+            </p>
+        </section>
+        <section>
+            <hr>
+            <h2>Nos cafés</h2>
+            <hr>
+            <p>Ils sont de véritables reflets des communautés dans lesquelles ils évoluent. Beaucoup de nos magasins
+                exposent
+                des œuvres d'art locales et diffusent de la musique locale. Une connexion Wi-Fi gratuite est disponible
+                dans
+                tous les endroits.</p>
+            <p>Et contrairement à d’autres, nos magasins sentent le café. Si vous avez déjà visité un café CoffeeBuzz,
+                vous
+                savez de quoi nous parlons. C'est l'avantage de rôtir chaque jour, directement en magasin.</p>
+            <address>
+                La cafe
+                18 Av Antonine-Maillet, Moncton, NB E1A 3E9 <br>
+                t&eacute;l&eacute;phone: 506.858.1234
+
+            </address>
+        </section>
+        <section id="specials">
+            <div>
+                <hr>
+                <h2>Spécial du jour</h2>
+                <hr>
+                <p>Café melange maison</p>
+                <img src="../img/house_blend.jpg" alt="Café mélange maison" width="143" height="143" class="rond-100"
+                    title="Un mélange doux de cafés du Mexique" />
+            </div>
+
+        </section>
+    </main>
+    <!-- cours 6 - grid layout:  déplacer le main ici -->
+    <!--
+            aside
+            La balise (élément) aside représente une section d'une
+            page composée de contenu lié au
+            contenu autour de l'élément de côté, et qui
+            être considéré comme distinct de ce contenu.
+            Sont fréquemment présents sous la forme d'encadrés ou de boîtes de légende.
+            -->
+    <aside>
+        <hr>
+        <h2>Pour apprendre plus</h2>
+        <hr>
+        <ul>
+            <li><a href="" title="Découvrez notre salon">Salon</a></li>
+            <li><a href="carrieres.html" title="Explorez nos carrières">Carrières</a></li>
+            <li><a href="" title="Lire notre bulletin">Bulletin</a></li>
+            <li><a href="" title="Apprendre plus sure le commerce équitable">Commerce équitable</a></li>
+        </ul>
+    </aside>
+
+
+    <!-- La balise footer (élément) représente le "pied de page" de
+     un document ou une section d'un document. Généralement le
+     le pied de page contient les informations de copyright, une adresse de contact,
+     liens vers les conditions d'utilisation et liens vers d'autres
+     documents connexes. -->
+    <footer>
+        <p>
+            <em>Copyright &copy; 2023 CoffeeBuzz</em>
+        </p>
+    </footer>
+</body>
+
+</html>
